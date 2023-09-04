@@ -1,7 +1,7 @@
 package weplus.chap05;
 
 public class Vehicules {
-    private String couleur;
+    private final String couleur;
     public Vehicules (String c) {
         couleur = c;
     }

@@ -22,8 +22,8 @@ public class MainVehicules {
         //mavoiture.AfficheVehicules();
         ((Vehicules)mavoiture).AfficheVehicules();
 */
-       Vehicules savoiture = new Voitures("anthracite", 3);
-        ((Vehicules)savoiture).AfficheVehicules();
+       weplus.chap05.Vehicules savoiture = new weplus.chap05.Voitures("anthracite", 3);
+        ((weplus.chap05.Vehicules)savoiture).AfficheVehicules();
 
     }
 }

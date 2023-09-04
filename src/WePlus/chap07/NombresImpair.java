@@ -3,7 +3,7 @@ package weplus.chap07;
 import java.util.ArrayList;
 
 public class NombresImpair {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ArrayList<Integer> listeImpair = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             listeImpair.add(i * 2 + 1);

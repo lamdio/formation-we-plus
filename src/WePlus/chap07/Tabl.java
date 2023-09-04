@@ -1,7 +1,7 @@
 package weplus.chap07;
 
 public class Tabl {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Déclaration d'un tableau d'entiers
 /*        int tableauEntiers[];
 
@@ -40,7 +40,7 @@ public class Tabl {
         System.out.print(" trié devient : " + Arrays.toString(arr4));
 */
         //two rows and three columns
-        int arr[][] = {{11, 22, 33}, {44, 55, 66}};
+        int[][] arr = {{11, 22, 33}, {44, 55, 66}};
 
         //outer loop from 0 till number of rows
         for (int i = 0; i < 2; i++) {

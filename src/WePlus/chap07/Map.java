@@ -3,7 +3,7 @@ package weplus.chap07;
 import java.util.HashMap;
 
 public class Map {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // Déclaration et initialisation d'une HashMap
         HashMap<String, Integer> map = new HashMap<>();

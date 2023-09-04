@@ -5,10 +5,10 @@ public class CompteBancaire  {
     public CompteBancaire(float s) {
         solde = s;
     }
-    void retirer(float retrait) throws SoldeException {
+    void retirer(float retrait) throws weplus.chap06.SoldeException {
         System.out.print("Retrait : " + retrait + " -> ");
         if(solde < retrait) {
-            throw new SoldeException("Solde : "+ solde+ " Insuffisant pour un retrait de " + retrait);
+            throw new weplus.chap06.SoldeException("Solde : "+ solde+ " Insuffisant pour un retrait de " + retrait);
         }
         solde = solde - retrait;
     }

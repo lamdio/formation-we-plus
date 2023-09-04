@@ -1,6 +1,6 @@
 package weplus.chap05;
 
-public class D extends C {
+public class D extends weplus.chap05.C {
     private int j = 0;
     public D() {
         j = 1;

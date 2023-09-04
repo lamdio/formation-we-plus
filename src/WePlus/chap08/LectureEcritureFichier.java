@@ -8,7 +8,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 
 public class LectureEcritureFichier {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
             File fichier = new File("c:/Users/ldio/Formation_We+/Java/test_lecture.txt");
             FileReader lecteur = new FileReader(fichier);

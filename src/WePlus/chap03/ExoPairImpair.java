@@ -2,7 +2,7 @@ package weplus.chap03;
 
 public class ExoPairImpair {
 
-		private int nbr;
+		private final int nbr;
 		
 		public ExoPairImpair (int i){
 			nbr = i;

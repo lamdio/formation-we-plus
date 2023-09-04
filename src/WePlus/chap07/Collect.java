@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class Collect {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 //*
         // Déclaration et initialisation d'une ArrayList d'entiers
         ArrayList<Integer> listeEntiers = new ArrayList<>();

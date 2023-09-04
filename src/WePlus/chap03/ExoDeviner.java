@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class ExoDeviner {
 	
 	private int nombre;
-	private int aleat;
+	private final int aleat;
 	
 	public ExoDeviner(int a) {		
 		aleat = a;

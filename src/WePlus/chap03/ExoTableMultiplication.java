@@ -2,7 +2,7 @@ package weplus.chap03;
 
 public class ExoTableMultiplication {
 	
-	private int nombre;
+	private final int nombre;
 	
 	public ExoTableMultiplication(int n) {
 		nombre = n;

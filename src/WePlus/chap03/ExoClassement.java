@@ -2,7 +2,7 @@ package weplus.chap03;
 
 public class ExoClassement {
 	
-	private float note;
+	private final float note;
 	
 	public ExoClassement(float i) {
 		note = i;

@@ -1,7 +1,7 @@
 package weplus.chap06;
 
 public class Pile {
-    private int pile[];
+    private final int[] pile;
     private int sommet = 0;
     public static final String ERR_VIDE = "Pile est vide";
     public static final String ERR_PLEINE = "Pile est pleine";
@@ -9,15 +9,15 @@ public class Pile {
         pile = new int [taille];
         System.out.println("Taille pile : " + pile.length + "\n");
     }
-    void empile(int val) throws PileSizeException {
+    void empile(int val) throws weplus.chap06.PileSizeException {
         if(sommet >= pile.length) {
-            throw new PileSizeException(ERR_PLEINE);
+            throw new weplus.chap06.PileSizeException(ERR_PLEINE);
         }
         pile[sommet++] = val;
     }
-    void  depile() throws PileSizeException {
+    void  depile() throws weplus.chap06.PileSizeException {
         if(sommet < 1) {
-            throw new PileSizeException(ERR_VIDE);
+            throw new weplus.chap06.PileSizeException(ERR_VIDE);
         }
         pile[--sommet] = 0;
     }

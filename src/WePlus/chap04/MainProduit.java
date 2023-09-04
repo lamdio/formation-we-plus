@@ -2,13 +2,13 @@ package weplus.chap04;
 
 public class MainProduit {
     public static void main(String[] args) {
-        Produit p1 = new Produit();
+        weplus.chap04.Produit p1 = new weplus.chap04.Produit();
         p1.afficheProduit();
 
-        Produit p2 = new Produit("Pelle", 26f, 100);
+        weplus.chap04.Produit p2 = new weplus.chap04.Produit("Pelle", 26f, 100);
         p2.afficheProduit();
 
-        Produit p3 = new Produit(p2);
+        weplus.chap04.Produit p3 = new weplus.chap04.Produit(p2);
         p3.afficheProduit();
     }
 }

@@ -1,8 +1,8 @@
 package weplus.chap07;
 
 public class NombresPairs {
-    public static void main(String args[]) {
-        int tab[] = new int[10];
+    public static void main(String[] args) {
+        int[] tab = new int[10];
 
         for (int i = 1; i <= 10; i++) {
             tab[i-1] = i * 2;

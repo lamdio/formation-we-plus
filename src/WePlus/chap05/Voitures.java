@@ -1,7 +1,7 @@
 package weplus.chap05;
 
-public class Voitures  extends Vehicules {
-    private int nbPortes;
+public class Voitures  extends weplus.chap05.Vehicules {
+    private final int nbPortes;
     private String color;
         public Voitures ( String cl, int n) {
         super(cl);

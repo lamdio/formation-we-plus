@@ -2,7 +2,7 @@ package weplus.chap03;
 
 public class ExoJoursSemaine {
 	
-	private int jour;
+	private final int jour;
 	
 	public ExoJoursSemaine(int j) {
 		jour = j;

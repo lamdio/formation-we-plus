@@ -1,9 +1,9 @@
 package weplus.chap04;
 
 public class CompteBancaire {
-    private float oldSolde = 2000f;
+    private final float oldSolde = 2000f;
     private float newSolde = 0f;
-    private String titulaire;
+    private final String titulaire;
     private float depot = 0f;
     private float retrait = 0f;
     private char operation;

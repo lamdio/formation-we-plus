@@ -1,8 +1,8 @@
 package weplus.chap04;
 
 public class Rectangle {
-    private float Largeur;
-    private Float Hauteur;
+    private final float Largeur;
+    private final Float Hauteur;
     private Float Perimetre;
     private Float Superficie;
     public Rectangle(Float l, Float h) {
