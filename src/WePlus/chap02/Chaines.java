@@ -1,9 +1,9 @@
 package WePlus.chap02;
 
 public class Chaines {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
         String fruits = "Apple, Banana, Orange";
-        String[] fruitArray = fruits.split(", ");
+        String fruitArray[] = fruits.split(", ");
         int i = 0;
 
         System.out.println("fruits : " + fruits + " -> " + fruits.length() + " caracteres\n");
