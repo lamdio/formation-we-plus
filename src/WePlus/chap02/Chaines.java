@@ -1,4 +1,4 @@
-package WePlus.chap2;
+package WePlus.chap02;
 
 public class Chaines {
     public static void main(String[] args) {

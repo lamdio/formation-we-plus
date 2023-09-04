@@ -1,4 +1,4 @@
-package WePlus;
+package WePlus.chap02;
 
 public class ExempleTypesPrimitifs {
     public static void main(String[] args) {
