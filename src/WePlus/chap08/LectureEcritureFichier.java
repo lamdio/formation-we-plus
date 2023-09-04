@@ -24,7 +24,7 @@ public class LectureEcritureFichier {
         catch(IOException e){
                e.printStackTrace();
         }
-
+/*
         try {
             File fichier = new File("c:/Users/ldio/Formation_We+/Java/test_ecriture.txt");
             FileWriter ecrivain = new FileWriter(fichier);
@@ -54,5 +54,6 @@ public class LectureEcritureFichier {
         } catch (IOException e) {
             e.printStackTrace();
         }
+ */
     }
 }
