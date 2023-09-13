@@ -124,8 +124,14 @@ public class BddPostgreSql {
                 System.out.println(splitligne);
                 int indmax = col.length - 1;
                 //System.out.println("indice :" + indice + " indmax : " + indmax);
+                if (col[3] == "") {
+                    col[3] = "01/01/3000";
+                }
 
                 for (String a: col) {
+                    if (a == ""){
+                        a = "Null";
+                    }
                     if (indice < indmax) {
                         ireq = ireq + "'" + a + "', ";
                     } else {
