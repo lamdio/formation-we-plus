@@ -153,4 +153,52 @@ public class BddPostgreSql {
             System.out.println(e.getMessage());
         }
     }
+
+    public void reqInsert (String req) {
+        try {
+            File fichier = new File("c:/Users/ldio/Formation_We+/Java/ajout_individu.txt");
+            FileReader lecteur = new FileReader(fichier);
+            BufferedReader buffer = new BufferedReader(lecteur);
+            String ligne;
+            int indice = 0;
+            String ireq = req;
+
+            Statement stmt = conn.createStatement();
+
+            while ((ligne = buffer.readLine()) != null) {
+                //System.out.println(ligne);
+                String col[] = ligne.split("#");
+                String splitligne = Arrays.toString(col);
+                System.out.println(splitligne);
+                int indmax = col.length - 1;
+                //System.out.println("indice :" + indice + " indmax : " + indmax);
+                if (col[2] == "") {
+                    col[2] = "01/01/3000";
+                }
+
+                for (String a: col) {
+                    if (a == ""){
+                        a = "Null";
+                    }
+                    if (indice < indmax) {
+                        ireq = ireq + "'" + a + "', ";
+                    } else {
+                        ireq = ireq + "'" + a + "')";
+                    }
+                    indice++;
+                }
+                System.out.println(ireq);
+                stmt.executeUpdate(ireq);
+                indice = 0;
+                ireq = req;
+            }
+
+            buffer.close();
+            lecteur.close();
+            conn.close();
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }
