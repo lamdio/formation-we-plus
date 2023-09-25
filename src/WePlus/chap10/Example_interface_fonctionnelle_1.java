@@ -1,9 +1,11 @@
 package WePlus.chap10;
 
 import java.util.*;
+@FunctionalInterface
 interface StringConcat {
     public String sconcat(String a, String b);
 }
+@FunctionalInterface
 interface addFloat {
     public float fadd(float x, float y);
 }
@@ -24,6 +26,7 @@ public class Example {
        /* for (int indice = 0; indice < list.size(); indice++) {
             System.out.println(list.get(indice));
         }*/
+        System.out.println(list);
         list.forEach (
                 //(names) -> System.out.println(names)
                 System.out::println
