@@ -14,11 +14,16 @@ public class NombresImpair {
         for (int i = 1; i <= 20; i += 2) {
             impairs.add(i);
         }
+        System.out.println(impairs);
+
+        listeImpair.forEach(System.out::println);
+        System.out.println();
+
         for (int impair : impairs) {
             System.out.println(impair);
         }
 
-        int valeur = 3;
+        int valeur = 4;
         if(impairs.contains(valeur)) {
             System.out.print("La liste contient " + valeur);
         }else{
