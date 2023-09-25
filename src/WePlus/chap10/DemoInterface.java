@@ -1,6 +1,6 @@
 package WePlus.chap10;
 
-class Demo implements MyInterface, MyOtherInterface, MyNewInterface {
+class DemoInterface implements MyInterface, MyOtherInterface, MyNewInterface {
     public void method1() {
         System.out.println("implementation of method1");
     }
