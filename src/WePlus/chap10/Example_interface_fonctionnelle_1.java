@@ -9,7 +9,7 @@ interface StringConcat {
 interface addFloat {
     public float fadd(float x, float y);
 }
-public class Example {
+public class Example_interface_fonctionnelle_1 {
     public static void main(String args[]) {
         // lambda expression with multiple arguments
         StringConcat s = (str1, str2) -> str1 + str2;
