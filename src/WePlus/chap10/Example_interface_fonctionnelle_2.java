@@ -7,7 +7,6 @@ interface MyFunctionalInterface {
 }
  */
 public class Example_interface_fonctionnelle_2 {
-
     public static void main(String args[]) {
         // lambda expression
         /*MyFunctionalInterface sum = (a, b) -> a + b;
